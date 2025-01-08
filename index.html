@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculator</title>
+    <style>
+    body{
+        background-color: rgb(39,49,54);
+    }
+    .Rectangle{
+        background-color: aqua;
+        padding: 40px;
+        width: 60px;
+        border-radius: 10px;
+        margin: 30px;
+    }
+    .Rectangle:hover{
+        background-color: aqua;
+        padding: 40px;
+        width: 60px;
+        border-radius: 10px;
+        margin: 30px;
+        box-shadow: 10px 10px rgba(0, 255, 255, 0.256);
+    }
+    .Circle{
+        background-color: aqua;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        margin: 30px;
+    }
+    .Circle:hover{
+        background-color: aqua;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        margin: 30px;
+        box-shadow: 10px 10px rgba(0, 255, 255, 0.256);
+    }
+    .triangle{
+        width: 60px;
+        height: 60px;
+        margin: 30px;
+        background-image: linear-gradient(to top right, aqua 50%,rgb(39,49,54) 50%);
+    }
+    .triangle:hover{
+        background-image: linear-gradient(to top right, aqua 50%,rgb(39,49,54) 50%);
+        background-color: aqua;
+        width: 60px;
+        height: 60px;
+        margin: 30px;
+        box-shadow: 0.1px 10px rgba(0, 255, 255, 0.256);
+    }
+    
+    .center{
+        background-color: aqua;
+        height: 40px;
+        width: 60px;
+        margin: 30px;
+    }
+    .center:hover{
+        background-color: aqua;
+        height: 40px;
+        width: 60px;
+        margin: 30px;
+        box-shadow: 10px 10px rgba(0, 255, 255, 0.256);
+    }
+    </style>
+</head>
+<body>
+    <div class="Rectangle" onclick="Rectangle()">
+
+    </div>
+    <div class="triangle" onclick="tringle()">
+
+    </div>
+    <div class="Circle" onclick="Circle()">
+
+    </div>
+    <div class="Parallelogram" onclick="Parallelogram()">
+<div class="side"></div><div class="center"></div><div class="side1"></div>
+    </div>
+    <script>
+     var choice = prompt("/n choose the angle to get the area of it: /n1.Area of Rectangle/n2.Area of Triangle/n3.Area of Circle/n4.Area of Parallelogram")
+
+     if (choice === '1'){
+        h = prompt('Enter the height of rectangle')
+        b = prompt('Enter the breneath of rectangle')
+        var result = h*b;
+        alert('The area of rectagle is:' + result)
+    }
+    if (choice === '2'){
+        h = prompt('Enter the height of triangle')
+        b = prompt('Enter the base of triangle')
+        var result = h*b/2;
+        alert('The area of triangle is:' + result)
+    }
+    if (choice === '3'){
+        r = prompt('Enter the radious of Circle')
+        var result = Math.PI*Number(r)**2;
+        alert('The area of Circle is:' + result)
+    }
+    if (choice === '4'){
+        h = prompt('Enter the height of Parallelogram')
+        b = prompt('Enter the base of Parallelogram')
+        var result = h*b;
+        alert('The area of Parallelogram is:' + result)
+    }
+
+    function Rectangle(){
+        h = prompt('Enter the height of rectangle')
+        b = prompt('Enter the breneath of rectangle')
+        var result = h*b;
+        alert('The area of rectagle is:' + result)
+    }
+
+    function tringle(){
+        h = prompt('Enter the height of triangle')
+        b = prompt('Enter the base of triangle')
+        var result = h*b/2;
+        alert('The area of triangle is:' + result)
+    }
+    function Circle(){
+        r = prompt('Enter the radious of Circle')
+        var result = Math.PI*Number(r)**2;
+        alert('The area of Circle is:' + result)
+    }
+    function Parallelogram(){
+        h = prompt('Enter the height of Parallelogram')
+        b = prompt('Enter the base of Parallelogram')
+        var result = h*b;
+        alert('The area of Parallelogram is:' + result)
+    }
+    </script>
+</body>
+</html>
