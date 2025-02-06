@@ -7,6 +7,9 @@
     <style>
     body{
         background-color: rgb(39,49,54);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .Rectangle{
         background-color: aqua;
@@ -22,6 +25,8 @@
         border-radius: 10px;
         margin: 30px;
         filter: drop-shadow(10px 10px 20px aqua);
+        transform:scale(1.1);
+        transition: all 0.5s ease;
     }
     .Circle{
         background-color: aqua;
@@ -37,6 +42,8 @@
         border-radius: 100%;
         margin: 30px;
         filter: drop-shadow(10px 10px 20px aqua);
+        transform:scale(1.1);
+        transition: all 0.5s ease;
     }
     .triangle{
         background-image: linear-gradient(to top right, aqua 50%,rgb(39,49,54) 50%);
@@ -50,21 +57,32 @@
         width: 60px;
         height: 60px;
         margin: 30px;
-        filter: drop-shadow(0.1px 10px 20px aqua);
+        transform:scale(1.1);
+        transition: all 0.5s ease;
     }
     
     .center{
         background-color: aqua;
-        height: 40px;
-        width: 60px;
-        margin: 30px;
+        height: 60px;
+        width: 70px;
     }
-    .center:hover{
+    .Parallelogram{
+        display: flex;
+    }
+    .Parallelogram:hover{
+        transform:scale(1.1);
+        transition: all 0.5s ease;
         background-color: aqua;
-        height: 40px;
+    }
+    .side{
+        background-image: linear-gradient(to top left, aqua 50%,rgb(39,49,54) 50%);
         width: 60px;
-        margin: 30px;
-        filter: drop-shadow(10px 10px 20px aqua);
+        height: 60px;
+    }
+    .side1{
+        background-image: linear-gradient(to bottom right, aqua 50%,rgb(39,49,54) 50%);
+        width: 60px;
+        height: 60px;
     }
     </style>
 </head>
